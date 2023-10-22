@@ -1,0 +1,91 @@
+
+*{ 
+    background-color: lightblue;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body, header, main, footer {
+    border: 3px  goldenrod solid;
+    margin: 0.5px;
+}
+
+.header-menubar{
+    background-color: aliceblue;
+    margin: 0,5rem 0, 0 , 0,5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.caja {
+    background-color: azure;
+    border: goldenrod solid;
+    width: 300px;
+}
+.contenedor{ 
+    border: goldenrod solid ;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    grid-gap: 10px;
+}
+.botonera {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.carrousel {
+    width: 100%;
+    border: solid red;
+}
+
+.banner{
+    width: 100%;
+}
+
+img.africanwm, img.libroenrriquez {
+    max-width: 200px; 
+    border-radius: 0 15px 0 15px;
+    border-color: goldenrod;
+    border-style: solid;
+}
+
+.article {
+    border-color: goldenrod;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+h2 {
+    font-size: 18px; 
+    color: #666; 
+}
+
+p {
+    font-size: 14px; 
+    color: #999;
+}
+
+@media only screen and (max-width:768px) {
+    .contenedor {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .contenedor {
+        grid-template-columns: repeat(1,auto);
+    }
+}
