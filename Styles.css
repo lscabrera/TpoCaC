@@ -6,7 +6,7 @@
 }
 
 body, header, main, footer {
-    border: 3px  goldenrod solid;
+    /* border: 3px  goldenrod solid; */
     margin: 0.5px;
 }
 
@@ -14,26 +14,40 @@ body, header, main, footer {
     background-color: aliceblue;
     margin: 0,5rem 0, 0 , 0,5rem;
     padding: 0.5rem;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns:repeat(2,auto)
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+ul{
+display: flex;
+justify-content: center;
+padding: 1px;
+}
 li {
     padding: 5px;
 }
+
+.title {
+    background-color: aliceblue;
+    font-family: 'Sometype Mono', monospace;
+    font-size: 90px;
+}
+
 .caja {
     background-color: azure;
     border: goldenrod solid;
     width: 300px;
-    border-radius:  0 0 15px 15px;
+    border-radius: 0 0 15px 15px;
 }
 .contenedor{ 
-    border: goldenrod solid ;
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: space-evenly;
     grid-gap: 10px;
     margin-top: 20px;
+    padding: 15px;
 }
 .botonera {
     display: flex;
@@ -44,6 +58,10 @@ li {
     justify-content: space-evenly;
     
 }
+.suscription {
+    margin: 20px 400px 5px 400px;
+    border-radius: 15px;
+}
 
 img.africanwm, img.libroenrriquez {
     max-width: 200px; 
@@ -52,7 +70,7 @@ img.africanwm, img.libroenrriquez {
     border-style: solid;
 }
 
-.article {
+.article, .entrevista1 {
     border-color: goldenrod;
     padding: 10px;
     margin: 20px;
@@ -76,7 +94,6 @@ p {
 }
 
 footer {
-    
     text-align: center;
     min-height: 50px;
     margin-bottom: 20px;
