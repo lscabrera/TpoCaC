@@ -15,8 +15,7 @@ body, header, main, footer {
     margin: 0,5rem 0, 0 , 0,5rem;
     padding: 0.5rem;
     display: grid;
-    grid-template-columns:repeat(2,auto)
-    justify-content: space-evenly;
+    grid-template-columns:repeat(2,auto);
     align-items: center;
 }
 
@@ -24,7 +23,9 @@ ul{
 display: flex;
 justify-content: center;
 padding: 1px;
+list-style: none;
 }
+
 li {
     padding: 5px;
 }
