@@ -76,11 +76,6 @@ li {
     justify-content: space-evenly;
 }
 
-.suscription {
-    margin: 20px 400px 5px 400px;
-    border-radius: 15px;
-}
-
 img.africanwm, img.libroenrriquez, img.oct, img.nov, img.abril {
     max-width: 300px; 
     border-radius: 0 15px 0 15px;
@@ -97,9 +92,10 @@ img.africanwm, img.libroenrriquez, img.oct, img.nov, img.abril {
 }
 
 .registro{
-    margin-left: 500px;
+    margin: 20px 400px 5px 400px;
     background-color: aliceblue;
     background-origin: padding-box;
+    border-radius: 15px;
 }
 
 h1 {
