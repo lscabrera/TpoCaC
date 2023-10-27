@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="ImagenesTpGrupal\libroAbiertoFavicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sometype+Mono:ital,wght@1,700&family=Vollkorn+SC:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="header-menubar">
+            <!-- <div><img class="logo" src="C:\Users\laura\OneDrive\Documentos\CaC Full Stack\TP grupal 24 Oct\TpoCaC\ImagenesTpGrupal\6920933.jpg" alt="" width="120px"></div> -->
+                <p class="title"> Herramientas Literarias</p>
+                <ul>
+                    <li><a href="Index.html" target="blank">Inicio</a></li>
+                    <li><a href="Blog literario.html">Blog literario</a></li>
+                    <li><a href="agenda.html" >Agenda</a></li>
+                    <li><a href="contacto.html" class="enlace-nav">Contacto</a></li>
+                </ul>
+        </nav>
+    </header>
+    <div class="registro">
+        <!-- Falta que lo registrado baje a un documento -->
+        <br>
+        <h2>Registro</h2>
+        <form id="registroForm" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label>Suscribirse a:</label>
+        <input type="checkbox" id="blog" name="suscripcion" value="blog"> Blog
+        <input type="checkbox" id="agenda" name="suscripcion" value="agenda"> Agenda
+        <input type="checkbox" id="match" name="suscripcion" value="match"> Match<br><br>
+
+        <input type="submit" value="Registrarse">
+        </form>
+    </div>
+    <script>
+        function validarFormulario() {
+            // Validar que al menos una casilla de suscripción esté marcada
+            var suscripciones = document.getElementsByName("suscripcion");
+            var alMenosUnaSeleccionada = false;
+            for (var i = 0; i < suscripciones.length; i++) {
+                if (suscripciones[i].checked) {
+                    alMenosUnaSeleccionada = true;
+                    break;
+                }
+            }
+
+            if (!alMenosUnaSeleccionada) {
+                alert("Debes seleccionar al menos una opción de suscripción (Blog, Agenda o Match).");
+                return false;
+            }
+        
+            return true;
+        }
+    </script>
+    <br>
+</body>
+<footer>
+    <p>Herramientas Literarias 2023</p>
+    <br>
+    <a target="_blank" href="http://www.facebook.com" class="fa fa-facebook"></a>
+    <a target="_blank" href="http://www.twitter.com" class="fa fa-twitter"></a>
+    <a target="_blank" href="http://www.youtube.com" class="fa fa-youtube"></a>
+    <a target="_blank" href="http://www.instagram.com" class="fa fa-instagram"></a>
+</footer>
+</html>

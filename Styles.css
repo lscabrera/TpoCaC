@@ -14,42 +14,47 @@ body, header, main, footer {
     background-color: aliceblue;
     margin: 0,5rem 0, 0 , 0,5rem;
     padding: 0.5rem;
-    display: grid;
-    grid-template-columns:repeat(2,auto);
+    /* display: grid;
+    grid-template-columns:repeat(2,auto); */
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 ul{
-display: flex;
-justify-content: center;
-padding: 1px;
-list-style: none;
+    padding: 10px; 
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: center;
+    list-style: none;
 }
 
 li {
-    padding: 5px;
+    padding: auto;
+    margin-right: 50px;
+}
+
+.logo{
+    border-radius: 20px 0 20px 0 goldenrod;
+    width: 130px;
 }
 
 .title {
-    background-color: rgb(209, 233, 254);
-    display: flex;
-    justify-content: center;
-    margin: 0 100px 0 100px;
+    background-color:aliceblue;
     font-family: 'Sometype Mono', monospace;
-    font-size: 90px;
-   text-shadow: goldenrod;
+    font-size: 50px;
+    text-shadow: goldenrod;
+    text-align:justify;
 }
 
 .registrate{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 70px;
+    justify-content:center;
+    align-content: center;
 }
 
 .caja {
-    background-color: azure;
+    background-color: aliceblue;
     border: goldenrod solid;
     width: 300px;
     border-radius: 0 0 15px 15px;
@@ -58,7 +63,7 @@ li {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: space-evenly;
-    grid-gap: 10px;
+    grid-gap: 30px;
     margin-top: 20px;
     padding: 15px;
 }
@@ -69,15 +74,10 @@ li {
     background-color: aliceblue;
     align-items: center;
     justify-content: space-evenly;
-    
-}
-.suscription {
-    margin: 20px 400px 5px 400px;
-    border-radius: 15px;
 }
 
-img.africanwm, img.libroenrriquez {
-    max-width: 200px; 
+img.africanwm, img.libroenrriquez, img.oct, img.nov, img.abril {
+    max-width: 300px; 
     border-radius: 0 15px 0 15px;
     border-color: goldenrod;
     border-style: solid;
@@ -89,6 +89,13 @@ img.africanwm, img.libroenrriquez {
     margin: 20px;
     display: inline-block;
     text-align: left;
+}
+
+.registro{
+    margin: 20px 400px 5px 400px;
+    background-color: aliceblue;
+    background-origin: padding-box;
+    border-radius: 15px;
 }
 
 h1 {
@@ -104,6 +111,17 @@ h2 {
 p {
     font-size: 14px; 
     color: #999;
+}
+.cartelera{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+    align-content: space-between;
+    margin: 20px;
+    padding: 10px;
+    border-radius: goldenrod;
+    box-shadow: #999;
 }
 
 footer {
@@ -124,6 +142,9 @@ footer p {
 @media only screen and (max-width:768px) {
     .contenedor {
         grid-template-columns: repeat(2, auto);
+    }
+    .title {
+        font-size: 30px;
     }
 }
 

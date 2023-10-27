@@ -8,25 +8,33 @@
     <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
-    <form action="show_data.html" target="_blank">
-
-        <label for="firstname">Nombre: </label><input size="20" type="text" name="firstname" required=""
+    <nav class="header-menubar">
+        <!-- <div><img class="logo" src="C:\Users\laura\OneDrive\Documentos\CaC Full Stack\TP grupal 24 Oct\TpoCaC\ImagenesTpGrupal\6920933.jpg" alt="" width="120px"></div> -->
+            <p class="title"> Herramientas Literarias</p>
+            <ul>
+                <li><a href="Index.html" target="blank">Inicio</a></li>
+                <li><a href="Blog literario.html">Blog literario</a></li>
+                <li><a href="agenda.html" >Agenda</a></li>
+                <li><a href="contacto.html" class="enlace-nav">Contacto</a></li>
+            </ul>
+    </nav>
+    <div class="registro">
+        <form action="show_data.html" target="_blank">
+            <label for="firstname">Nombre: </label><input size="20" type="text" name="firstname" required=""
             placeholder="Ingrese su nombre aqui..."> <br><br>
 
-        <label for="lastname">Apellido:</label><input size="20" type="text" name="lastname" required=""
+            <label for="lastname">Apellido:</label><input size="20" type="text" name="lastname" required=""
             placeholder="Ingrese su apellido aqui..."> <br><br>
 
-        <label for="mail">Correo Electronico: </label><input size="20" type="email" name="mail" required="">
-        <br><br>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required="" rows="5" cols="40"
+            <label for="mail">Correo Electronico: </label><input size="20" type="email" name="mail" required="">
+            <br><br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required="" rows="5" cols="40"
             style="resize: vertical; height: 50px;"></textarea> <br><br>
-
-
-
-        <input type="submit" value="Enviar">
-        <button type="reset">Reset</button> <br>
-        <br>
-        </form>
+            <input type="submit" value="Enviar">
+            <button type="reset">Reset</button> <br>
+            <br>
+            </form>
+        </div>
 </body>
 </html>
